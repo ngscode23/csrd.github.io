@@ -1,0 +1,104 @@
+body {
+  background-color: #bbdefb;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-size: 10px;
+  /* font-family: 'Manrope', sans-serif; */
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 300px;
+  height: 300px;
+  border: 1px solid;
+  position: relative;
+  perspective: 1000px;
+}
+.card:hover .front {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+.card:hover .back {
+  transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+}
+.front,
+.back {
+  border: 1px solid gren;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.back {
+  /*border: 1px solid red;
+*/
+  background-color: aqua;
+  transform: rotateY(190deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(190deg);
+  -ms-transform: rotateY(190deg);
+  -o-transform: rotateY(190deg);
+}
+.front {
+  background-color: #fff;
+}
